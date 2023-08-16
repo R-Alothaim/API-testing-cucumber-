@@ -31,9 +31,10 @@ public class stepDefination extends utils {
   resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(io.restassured.http.ContentType.JSON).build();
   res = given().spec(requestspec()).body(data.addplace());
 }
-  @When("^I click on the login button$")
-  public void i_click_on_the_login_button() {
-    System.out.println("User clicks on login button");
+  @When("user calls {string} with post http request")
+  public void post_req(String string) {
+    resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(io.restassured.http.ContentType.JSON).build();
+    response = res.when().post("/maps/api/place/add/json").then().spec(resspec).extract().response();
   }
 }
 
