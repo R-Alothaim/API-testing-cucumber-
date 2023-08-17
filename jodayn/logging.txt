@@ -6,7 +6,7 @@ Query params:	key=qaclick123
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Content-Type=application/json
+				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
 Body:
@@ -27,7 +27,7 @@ Body:
     "website": "http://google.com"
 }
 HTTP/1.1 200 OK
-Date: Thu, 17 Aug 2023 06:55:56 GMT
+Date: Thu, 17 Aug 2023 09:04:03 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,26 +40,26 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "aebbff3e1cdb966cbc4d14fd1a643667",
+    "place_id": "f8b9274421aacc9173911a4f0db636ed",
     "scope": "APP",
-    "reference": "c75fe3bd71d90a03d9b7629100a86765c75fe3bd71d90a03d9b7629100a86765",
-    "id": "c75fe3bd71d90a03d9b7629100a86765"
+    "reference": "8a2791db3e2adb55e99e9dc9ca6252448a2791db3e2adb55e99e9dc9ca625244",
+    "id": "8a2791db3e2adb55e99e9dc9ca625244"
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=aebbff3e1cdb966cbc4d14fd1a643667
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=f8b9274421aacc9173911a4f0db636ed
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=aebbff3e1cdb966cbc4d14fd1a643667
+				place_id=f8b9274421aacc9173911a4f0db636ed
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Content-Type=application/json
+				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Thu, 17 Aug 2023 06:55:57 GMT
+Date: Thu, 17 Aug 2023 09:04:03 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -91,15 +91,15 @@ Query params:	key=qaclick123
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Content-Type=application/json
+				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "place_id": "aebbff3e1cdb966cbc4d14fd1a643667"
+    "place_id": "f8b9274421aacc9173911a4f0db636ed"
 }
 HTTP/1.1 200 OK
-Date: Thu, 17 Aug 2023 06:55:57 GMT
+Date: Thu, 17 Aug 2023 09:04:04 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST

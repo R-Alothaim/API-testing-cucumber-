@@ -1,6 +1,5 @@
 package step_definitions;
 
-import org.apache.hc.core5.http.ContentType;
 import org.apiguardian.api.API;
 import org.junit.runner.RunWith;
 
@@ -14,7 +13,6 @@ import java.io.IOException;
 import TestDataBuilder.APIResources;
 import TestDataBuilder.TestData;
 import TestDataBuilder.utils;
-import io.cucumber.cienvironment.internal.com.eclipsesource.json.Json;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

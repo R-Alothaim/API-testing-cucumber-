@@ -2,7 +2,6 @@ package Pojo2;
 
 import java.util.List;
 
-import com.graphbuilder.struc.LinkedList;
 
 public class loca {
   private location location;
