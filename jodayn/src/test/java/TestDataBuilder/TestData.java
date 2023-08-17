@@ -26,4 +26,7 @@ public loca addplace(String name, String language, String address) {
 return locaMain;
 
   }
+  public String deleteplace(String place_id) {
+    return "{\r\n    \"place_id\":\""+place_id+"\"\r\n}";
+  }
 }
