@@ -3,11 +3,118 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-08-17T11:10:00.302Z",
+        "start_timestamp": "2023-08-18T17:35:38.331Z",
+        "line": 10,
+        "name": "Scenario Outline name: Home page default login",
+        "description": "",
+        "id": "application-login;scenario-outline-name:-home-page-default-login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1277278900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add place \"Ryan\" \"English\" \"Riyadh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ryan\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Riyadh\"",
+                  "offset": 27
+                }
+              ],
+              "location": "step_definitions.stepDefination.add_place(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1172875200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls \"addPlaceAPI\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "step_definitions.stepDefination.httprequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 483414100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "step_definitions.stepDefination.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 274975500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify place_id created maps to \"Ryan\" using \"getPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ryan\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"getPlaceAPI\"",
+                  "offset": 45
+                }
+              ],
+              "location": "step_definitions.stepDefination.verify_place_id_created_maps_to_using_get_place_api(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-08-18T17:35:41.608Z",
         "before": [
           {
             "result": {
-              "duration": 2220714000,
               "status": "passed"
             },
             "match": {
@@ -24,6 +131,7 @@
         "steps": [
           {
             "result": {
+              "duration": 3089500,
               "status": "passed"
             },
             "line": 14,
@@ -35,7 +143,7 @@
           },
           {
             "result": {
-              "duration": 229273000,
+              "duration": 218989000,
               "status": "passed"
             },
             "line": 15,
@@ -57,6 +165,7 @@
           },
           {
             "result": {
+              "duration": 8018100,
               "status": "passed"
             },
             "line": 16,
@@ -89,6 +198,81 @@
     "id": "application-login",
     "keyword": "Feature",
     "uri": "file:src/test/java/features/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-08-18T17:35:41.840Z",
+        "line": 10,
+        "name": "Verify if Add pet functionality is working",
+        "description": "",
+        "id": "this-is-for-pet-api;verify-if-add-pet-functionality-is-working;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16363900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add pet \"Ryan\" \"English\" \"Riyadh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ryan\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"Riyadh\"",
+                  "offset": 25
+                }
+              ],
+              "location": "step_definitions.stepDefination2.add_place(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 985468900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "calls \"addPlaceAPI\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPlaceAPI\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 25
+                }
+              ],
+              "location": "step_definitions.stepDefination2.httprequest(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPet"
+          }
+        ]
+      }
+    ],
+    "name": "This is for pet API",
+    "description": "",
+    "id": "this-is-for-pet-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/pet.feature",
     "tags": []
   }
 ]
